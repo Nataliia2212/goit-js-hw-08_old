@@ -44,5 +44,3 @@ function onMessageInput(event) {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(savedValue))
  }
-
-console.log('ok')
