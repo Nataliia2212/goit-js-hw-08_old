@@ -1,16 +1,13 @@
 // Add imports above this line
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "simplelightbox/dist/simple-lightbox.min.css" ;
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
-console.log(SimpleLightbox)
 console.log(galleryItems);
-
 
 const galleryRef = document.querySelector('.gallery')
 const gallery = createGaleryMarkup(galleryItems);
-
 
 galleryRef.insertAdjacentHTML('beforeend', gallery)
 
@@ -26,9 +23,3 @@ function createGaleryMarkup(galleryItems) {
 }
 
 let lightbox = new SimpleLightbox('.gallery a', {captionsData:	'alt', captionDelay: 250, captionPosition: 'bottom'});
-
-
-
-
-
-console.log('ok')
